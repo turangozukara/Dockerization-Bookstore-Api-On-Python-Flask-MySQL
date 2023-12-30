@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  database:
+    image: mysql:8.0
+    restart: always
+    volumes:
+      - projectvolume:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Clarusway_1
+      MYSQL_DATABASE: bookstore_db
+      MYSQL_USER: clarusway
+      MYSQL_PASSWORD: Clarusway_1
+    ports:
+      - "3306:3306"
+    networks:
+      - project
+
+  projectserver:
+    build: .
+    depends_on:
+      - database
+    ports:
+      - "80:80"
+    restart: always
+    environment:
+      MYSQL_DATABASE_HOST: database
+    networks:
+      - project
+
+volumes:
+  projectvolume:
+
+networks:
+  project:
+    driver: bridge
