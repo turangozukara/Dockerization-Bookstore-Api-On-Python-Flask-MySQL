@@ -7,10 +7,10 @@ services:
     volumes:
       - projectvolume:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: Clarusway_1
-      MYSQL_DATABASE: bookstore_db
-      MYSQL_USER: clarusway
-      MYSQL_PASSWORD: Clarusway_1
+      MYSQL_ROOT_PASSWORD: xxx
+      MYSQL_DATABASE: xxx
+      MYSQL_USER: xxx
+      MYSQL_PASSWORD: xxx
     ports:
       - "3306:3306"
     networks:
