@@ -65,8 +65,6 @@ resource "aws_security_group" "sg" {
 }
 
 
-
-
 resource "aws_instance" "project-instance" {
   ami             = data.aws_ami.project.id
   instance_type   = var.instance_type
