@@ -15,7 +15,6 @@ connection = mysql.connect()
 connection.autocommit(True)
 cursor = connection.cursor()
 
-# Write a function named `init_bookstore_db` which initilazes the bookstore db
 # Create books table within sqlite db and populate with sample data
 # Execute the code below only once.
 def init_bookstore_db():
