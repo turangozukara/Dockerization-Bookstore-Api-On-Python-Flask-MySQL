@@ -15,7 +15,6 @@ connection = mysql.connect()
 connection.autocommit(True)
 cursor = connection.cursor()
 
-# Execute the code below only once.
 def init_bookstore_db():
     drop_table = 'DROP TABLE IF EXISTS bookstore_db.books;'
     books_table = """
