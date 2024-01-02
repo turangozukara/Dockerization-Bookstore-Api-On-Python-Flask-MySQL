@@ -57,8 +57,6 @@ def find_book(id):
         book = {'book_id':row[0], 'title':row[1], 'author':row[2], 'is_sold': bool(row[3])}
     return book
 
-
-# Write a function named `insert_book` which inserts book into the books table in the db,
 # and return the newly added book as dictionary
 # `[{'book_id': 1, 'title':'XXXX', 'author': 'XXXXXX', 'is_sold': 'Yes' or 'No'} ]`.
 def insert_book(title, author):
