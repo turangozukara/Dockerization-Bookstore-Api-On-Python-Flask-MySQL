@@ -46,7 +46,6 @@ def get_all_books():
     books =[{'book_id':row[0], 'title':row[1], 'author':row[2], 'is_sold': bool(row[3])} for row in result]
     return books
 
-# and return result as list of dictionary
 # `[{'book_id': 1, 'title':'XXXX', 'author': 'XXXXXX', 'is_sold': 'Yes' or 'No'} ]`.
 def find_book(id):
     query = f"""
