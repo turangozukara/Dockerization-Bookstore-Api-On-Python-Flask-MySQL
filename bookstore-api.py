@@ -100,8 +100,6 @@ def remove_book(book):
     row = cursor.fetchone()
     return True if row is None else False
 
-
-# Write a function named `home` which returns 'Welcome to the Turan's Bookstore API Service',
 # and assign to the static route of ('/')
 @app.route('/')
 def home():
