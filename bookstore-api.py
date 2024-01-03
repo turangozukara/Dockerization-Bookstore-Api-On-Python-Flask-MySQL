@@ -86,7 +86,6 @@ def change_book(book):
     row = cursor.fetchone()
     return {'book_id':row[0], 'title':row[1], 'author':row[2], 'is_sold': bool(row[3])}
 
-# Write a function named `remove_book` which removes book from the books table in the db,
 # and returns True if successfully deleted or False.
 def remove_book(book):
     delete = f"""
