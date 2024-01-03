@@ -104,7 +104,6 @@ def remove_book(book):
 def home():
     return "Welcome to Turan's Bookstore API Service"
 
-# Write a function named `get_books` which returns all books in JSON format for `GET`,
 @app.route('/books', methods=['GET'])
 def get_books():
     return jsonify({'books':get_all_books()})
