@@ -116,7 +116,6 @@ def get_book(book_id):
         abort(404)
     return jsonify({'book found': book})
 
-# Write a function named `add_book` which adds new book using `POST` methods,
 # and assign to the static route of ('/books')
 @app.route('/books', methods=['POST'])
 def add_book():
