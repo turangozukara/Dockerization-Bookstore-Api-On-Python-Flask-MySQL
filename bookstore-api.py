@@ -122,7 +122,6 @@ def add_book():
         abort(400)
     return jsonify({'newly added book':insert_book(request.json['title'], request.json.get('author', ''))}), 201
 
-# and assign to the static route of ('/books/<int:book_id>')
 @app.route('/books/<int:book_id>', methods=['PUT'])
 def update_book(book_id):
     book = find_book(book_id)
