@@ -109,7 +109,6 @@ def get_books():
     return jsonify({'books':get_all_books()})
 
 
-# Write a function named `get_books` which returns the book with given book_id in JSON format for `GET`,
 # and assign to the static route of ('/books/<int:book_id>')
 @app.route('/books/<int:book_id>', methods = ['GET'])
 def get_book(book_id):
