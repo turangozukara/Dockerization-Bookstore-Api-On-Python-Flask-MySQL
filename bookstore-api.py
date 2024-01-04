@@ -141,7 +141,6 @@ def delete_book(book_id):
         abort(404)
     return jsonify({'result':remove_book(book)})
 
-# Write a function named `not_found` for handling 404 errors which returns 'Not found' in JSON format.
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
