@@ -134,7 +134,6 @@ def update_book(book_id):
     book['is_sold'] = int(request.json.get('is_sold', int(book['is_sold'])))
     return jsonify({'updated book': change_book(book)})
 
-# Write a function named `delete_book` which updates an existing book using `DELETE` method,
 # and assign to the static route of ('/books/<int:book_id>')
 @app.route('/books/<int:book_id>', methods=['DELETE'])
 def delete_book(book_id):
