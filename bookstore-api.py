@@ -116,7 +116,6 @@ def get_book(book_id):
         abort(404)
     return jsonify({'book found': book})
 
-# and assign to the static route of ('/books')
 @app.route('/books', methods=['POST'])
 def add_book():
     if not request.json or not 'title' in request.json:
