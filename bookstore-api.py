@@ -145,7 +145,6 @@ def delete_book(book_id):
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
-# Write a function named `bad_request` for handling 400 errors which returns 'Bad Request' in JSON format.
 @app.errorhandler(400)
 def bad_request(error):
     return make_response(jsonify({'error': 'Bad request'}), 400)
