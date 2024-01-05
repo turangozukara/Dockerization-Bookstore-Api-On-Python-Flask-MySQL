@@ -108,7 +108,6 @@ def home():
 def get_books():
     return jsonify({'books':get_all_books()})
 
-
 @app.route('/books/<int:book_id>', methods = ['GET'])
 def get_book(book_id):
     book = find_book(book_id)
