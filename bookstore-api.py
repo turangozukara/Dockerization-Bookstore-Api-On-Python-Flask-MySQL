@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, abort, request, make_response
 from flaskext.mysql import MySQL
-
+.
 app = Flask(__name__)
 
 app.config['MYSQL_DATABASE_HOST'] = 'xxx'
