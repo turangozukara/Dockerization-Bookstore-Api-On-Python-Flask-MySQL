@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, abort, request, make_response
 from flaskext.mysql import MySQL
-.
 
 app = Flask(__name__)
 
